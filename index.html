@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>IELTS Writing Task</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="test-info">
+                    <p><strong>IELTS</strong> Test taker ID</p>
+                    <p class="time-left">Press Start to start the timer</p>
+                </div>
+                <div class="header-nav">
+                    <i class="fa fa-wifi"></i>
+                    <i class="fa fa-bell"></i>
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+            <div class="part-header">
+                <p><strong>Part 2</strong></p>
+                <p>
+                    You should spend about 40 minutes on this task. Write at
+                    least 250 words.
+                </p>
+            </div>
+            <div class="content">
+                <div class="task">
+                    <p class="task-topic">Write about the following topic:</p>
+                    <div class="editable-topic">
+                        <p class="task-details">
+                            The average standard of people's health is likely to
+                            be lower in the future than it is now.
+                        </p>
+                        <p class="task-details">
+                            To what extent do you agree or disagree with this
+                            statement?
+                        </p>
+                        <p class="task-statement">
+                            Give reasons for your answer and include any
+                            relevant examples from your own knowledge or
+                            experience.
+                        </p>
+                    </div>
+                </div>
+                <div class="editor">
+                    <textarea
+                        id="response"
+                        autocomplete="off"
+                        autocorrect="off"
+                        autocapitalize="off"
+                        spellcheck="false"
+                    ></textarea>
+                    <div class="word-count">Words: 0</div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button
+                    id="expand"
+                    class="nav-button"
+                    onclick="toggleEditTopic()"
+                >
+                    <i class="fa fa-pencil-square-o"></i>
+                </button>
+                <button
+                    id="copy"
+                    class="nav-button"
+                    onclick="copyToClipboard()"
+                >
+                    <i class="fa fa-clipboard"></i>
+                </button>
+                <button
+                    id="start-button"
+                    class="nav-button"
+                    onclick="startTimer(this)"
+                >
+                    Start
+                </button>
+            </div>
+
+            <div class="edit-topic">
+                <textarea id="change-topic"> </textarea>
+                <button class="nav-button" onclick="onSubmit()">Submit</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
