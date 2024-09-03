@@ -82,11 +82,13 @@ body {
 
 .editor textarea {
     flex: 1;
-    width: 100%;
+    width: 97%;
     min-height: 170px;
+    padding: 10px;
+    font-family: "Arial";
     border: 1px solid #ddd;
     border-radius: 4px;
-    font-size: 1em;
+    font-size: 14px;
     overflow: hidden;
     resize: none;
 }
